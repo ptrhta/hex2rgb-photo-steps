@@ -1,0 +1,46 @@
+.steps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    padding: 30px;
+}
+
+label {
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+
+.steps-form {
+    display: flex;
+    margin-bottom: 32px;
+}
+
+.col:not(:last-child) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 10px;
+}
+
+input {
+    border: 1px solid grey;
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.btnSubmit {
+    height: fit-content;
+    align-self: flex-end;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+.editMode {
+    border-color: green;
+}
