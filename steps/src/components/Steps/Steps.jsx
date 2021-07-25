@@ -67,6 +67,7 @@ export default function Steps() {
                 if (formatDate(step.date) === formatDate(currentData.date)) {
                   isNewDate = false;
                   if (editMode) {
+                    setEditMode(prevEditMode => !prevEditMode);
                     return {
                         ...step, date: currentData.date, km: +currentData.km
                       }
