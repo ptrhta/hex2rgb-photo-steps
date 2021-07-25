@@ -47,6 +47,8 @@ export default function Converter() {
             rgbColor.b = parseInt(color.substring(6),16);
         
             return setRGBColor(rgbColor);
+        } else if (color.length > 7) {
+            return setRGBColor('error');
         } else {
             return null
         }
